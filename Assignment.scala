@@ -23,4 +23,12 @@ object Assignment extends App{
     else Fibonacci(n-1)+Fibonacci(n-2)
   }
   println(Fibonacci(4))
+  
+  def Prime(n:Int):Boolean={
+    def isPrimeUntil(t:Int):Boolean=
+      if(t<=1) true
+      else n%t!=0 && isPrimeUntil(t-1)
+     isPrimeUntil(n/2)
+    }
+    println(Prime(13))
 }
