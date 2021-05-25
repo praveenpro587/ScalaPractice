@@ -38,7 +38,16 @@ object Expressions extends App{
     else
       println("Bye")
   }
+    val somevalue={
+    2<3 
+  }
+  println(somevalue)
   
+  val someothervalue={
+    if(somevalue) 22 else 32
+    54  //value of codeblock is always a value not the expression
+  }
+  println(someothervalue)
 
   
 }
