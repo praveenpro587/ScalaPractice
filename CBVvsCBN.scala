@@ -14,3 +14,15 @@ object CBVvsCBN extends App{
   callByName(System.nanoTime())
 }
 
+/*
+ * Call by value
+ * --value is computed before call
+ * --same value used everywhere
+ * --def myFuc(x:Int)
+ * ----myFuc(2)
+ * Call by Name
+ * --Expression is passed literally
+ * --Expression is evaluated at every single use
+ * --def myFuc(x: => Int)
+ * ----myFuc(2)
+ */
